@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>3rd opinion | プロフィールを編集</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="back_header">
+      <div class="back_btn">
+        <a href="#">
+          <svg class="back_arrow" viewBox="0 0 9.714 20.385"><path d="M31.944,42.386a1,1,0,0,1-.767-.358L23.49,32.866a1,1,0,0,1-.107-1.206.939.939,0,0,1,.09-.12l7.7-9.181a1,1,0,1,1,1.532,1.285l-7.174,8.549,7.174,8.55a1,1,0,0,1-.765,1.643Z" transform="translate(-23.229 -22.001)"/></svg>戻る</a>
+      </div>
+      <div class="back_ttl">
+        <h1>プロフィールを編集</h1>
+      </div>
+    </div>
+    <div id="app" class="container edit_profile">
+      <div class="photo">
+        <img alt="プロフィール写真を変更" class="prof_photo_img rounded-circle" src="images/dummy600x600.jpg">
+        <input type="file" class="form-control-file prof_photo_button" id="exampleFormControlFile1">
+      </div>
+      <div class="name">
+        <dl class=" prof_box">
+          <dt class="label"><label for="name">ニックネーム</label></dt>
+          <dd class="input"><input maxlength="50" name="name" placeholder="ニックネームを追加" class="input_name" value="みきゆか (KOHIMOTO)"></dd>
+        </dl>
+      </div>
+      <div class="profile">
+        <dl class=" prof_box">
+          <dt class="label"><label for="profile">プロフィール</label></dt>
+          <dd class="input"><textarea maxlength="160" name="description" placeholder="プロフィールを追加" class="input_prof">【Director / Designer / Frontend engineer】1992年生。Web制作を得意とするKOHIMOTO inc.運営。ゆるく更新しています。WORKS👻https://t.co/cSlFOt9TMl / 💌DM or Contact.</textarea></dd>
+        </dl>
+      </div>
+      <div class="id">
+        <dl class=" prof_box">
+          <dt class="label">ID</dt>
+          <dd class="input">_kohimoto_</dd>
+        </dl>
+      </div>
+      <div class="prof_seacret">
+        <div class="seacret">
+          <p>公開設定</p>
+          <dl class=" prof_box">
+            <dt class="label">性別</dt>
+            <dd class="input">女性<input class="radio_btn" type="radio" name="seacret" value="公開" checked="checked"></dd>
+          </dl>
+          <dl class=" prof_box">
+            <dt class="label">生年月日</dt>
+            <dd class="input">1992/01/25<input class="radio_btn" type="radio" name="seacret" value="非公開"></dd>
+          </dl>
+          <dl class=" prof_box">
+            <dt class="label">都道府県</dt>
+            <dd class="input">東京都<input class="radio_btn" type="radio" name="seacret" value="非公開"></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button type="submit" class="btn btn-primary">変更する</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
